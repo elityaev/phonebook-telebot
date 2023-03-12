@@ -53,9 +53,12 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-2. Cкопировать файл .env.example и назвать его .env, указать значение вашего
+2. Создать файл .env, указать значение вашего
 TELEGRAM_TOKEN 
 ([создание телеграм бота и получение токена](https://t.me/botfather))
+
+`TELEGRAM_TOKEN=`
+
 3. Запустить бота 
 ```shell
 python bot.py
