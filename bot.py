@@ -1,6 +1,8 @@
+import os
 import re
 
 import telebot
+from dotenv import load_dotenv
 from telebot import types
 
 from db import (
@@ -12,7 +14,9 @@ from db import (
     delete_person_and_phone_number
 )
 
-TELEGRAM_TOKEN=''
+load_dotenv()
+
+TELEGRAM_TOKEN=os.getenv('TELEGRAM_TOKEN')
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 
 person_data = []
