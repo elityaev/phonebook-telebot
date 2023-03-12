@@ -94,7 +94,7 @@ def check_callback(callback):
         button6 = types.InlineKeyboardButton(text='Удалить контакт', callback_data=f'delete_{person_id}')
         keyboard.add(button1, button2, button5, button6)
         bot.send_message(callback.message.chat.id,
-                         'Карточка контакта (при нажатии на пункт - редактирование)',
+                         'Карточка контакта (при нажатии на пункт, можно его отредатировать)',
                          reply_markup=keyboard)
 
     if re.match('edit_first_name_\d+', callback.data):
